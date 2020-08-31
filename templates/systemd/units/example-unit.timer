@@ -1,0 +1,21 @@
+[Unit]
+Description=<free text>
+After=<services> | <targets>
+Conflicts=<services>
+
+[Timer]
+OnActiveSec=<number>
+OnBootSec=<number>
+OnStartupSec=<number>
+OnUnitActiveSec=<number>
+OnUnitInactiveSec=<number>
+OnCalendar=<date>
+#DayOfWeek Year-Month-Day Hour:Minute:Second
+#Mon,Tue *-*-01..04 12:00:00
+#Mon..Fri 22:30
+AccuracySec=<number>
+Unit=<service>
+#Unit is unnecessary if timer unit is named like the service unit
+
+[Install]
+WantedBy=multi-user.target | <target>

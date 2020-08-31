@@ -1,0 +1,8 @@
+[Match]
+Name=enp1s0
+
+[Network]
+Address=<ip>/<wildcard mask>
+Gateway=<gateway ip>
+DHCP=yes | no | ipv4 | ipv6
+DNS=9.9.9.9

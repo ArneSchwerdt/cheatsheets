@@ -1,0 +1,18 @@
+[Unit]
+Description=<free text>
+After=<services> | <targets>
+Conflicts=<services>
+
+[Service]
+Restart=always | on-failure | on-success | on-abnormal | on-abort | on-watchdog
+RestartSec=<number>
+Type=simple | oneshot
+#oneshot means the command is terminating after it had finish or runs in background
+ExecStartPre=<command>
+ExecStart=<command>
+ExecStartPost=<command>
+ExecStop=<command>
+ExecStopPost=<command>
+
+[Install]
+WantedBy=multi-user.target | <target>
